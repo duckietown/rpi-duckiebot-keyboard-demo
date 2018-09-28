@@ -1,4 +1,4 @@
-FROM duckietown/rpi-gui-tools
+FROM duckietown/rpi-gui-tools:master18
 
 COPY run_keyboarddemo.sh .
 
