@@ -2,7 +2,9 @@ FROM duckietown/rpi-gui-tools:master18
 
 COPY run_keyboarddemo.sh .
 
-RUN apt-get update --fix-missing 
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update
 
 RUN apt-get install -y python-pygame
 
